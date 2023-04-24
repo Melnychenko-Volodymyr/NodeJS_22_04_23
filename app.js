@@ -5,7 +5,7 @@ console.log('START !!!');
 
 const func = async () => {
     let text = await fsp.readFile(`${__dirname}/t1.txt`, 'utf-8');
-    text =  text + "/n" + text;
+    text =  text + "********" + text;
     console.log('Read file');
 
     await fsp.writeFile(`${__dirname}/t2.txt`, text);
